@@ -23,7 +23,8 @@ lista.append(num)
 lista.append(identificador)
 lista.append(reg_date)
 
-directorio = path.dirname(path.abspath(__file__))
+#Utilicé el modulo "path" para fijar de forma absoluta el directorio donde se encuentra el archivo .csv. No es común pero ayudó a encontrarlo dentro de la misma carpeta.
+directorio = path.dirname(path.abspath(__file__)) 
 archivo = path.join(directorio, "addresses.csv")
 with open(archivo, "a") as cvfile:
     writer = csv.writer(cvfile)
