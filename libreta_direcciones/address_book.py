@@ -1,6 +1,8 @@
 import csv
 from datetime import date
 from os import path
+import uuid
+
 
 print("ingrese su nombre:")
 name = input()
@@ -14,7 +16,7 @@ num = input()
 fecha_actual = date.today()
 
 # Para el campo ID puede emplear la libreria integrada de python 'uuid'
-identificador = format(id(name), 'x')
+identificador = uuid.uuid4()
 
 reg_date = fecha_actual.strftime('%d/%m/%Y')
 lista = [ ]
