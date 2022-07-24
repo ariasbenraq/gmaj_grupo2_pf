@@ -1,43 +1,45 @@
 import string
 import random
 
-letras = list(string.ascii_letters)
+mayu = list(string.ascii_uppercase)
+minus = list(string.ascii_lowercase)
 numeros = list(string.digits)
 caracteres_especiales = list("+-%$&#")
-caracteres = list(string.ascii_letters + string.digits + "+-%$&#")
+caracteres = list(string.ascii_uppercase + string.ascii_lowercase + string.digits + "+-%$&#")
 #ascii_letters considera letras mayusculas y minusculas
 #string.digits considera numeros '0123456789'
 
 def generador_pass():
-    length = int(input("Ingrese el tamaño de la contraseña: "))
-    letras_count = int(input("Ingrese la cantidad de letras: "))
-    numeros_count = int(input("Ingrese la cantidad de numeros: "))
-    caracteres_especiales_count = int(input("Ingrese la cantidad de caracteres especiales: "))
-    caracteres_count = letras_count + numeros_count + caracteres_especiales_count
-
+    q1 = input("¿Desea ingresar la longitud de la contraseña? s/n:")
     
+    if q1 == "s":
+        length = int(input("ingrese la longitud: "))
+    else:
+        length = 16
         
-    if caracteres_count > length:
-        print("Los caracters totales son mayores a la longitud ingresada")
-        return
+    mayu2 = input("¿Desea que la contraseña tenga mayusculas? s/n:")
+    minus2 = input("¿Desea que la contraseña tenga minusculas? s/n:")
+    cespeciales = input("¿Desea que la contraseña contenga caracteres especiales? s/n:")
     
     
-
     password = []
+        
+    if mayu2 == "s":
+        random.shuffle(mayu)
+        for i in range(length):
+            password.append(random.choice(mayu))
+            
+    if minus2 == "s":
+        random.shuffle(minus)
+        for i in range(length):
+            password.append(random.choice(minus))
+            
+    if cespeciales == "s":
+        random.shuffle(caracteres_especiales)
+        for i in range(length):
+            password.append(random.choice(caracteres_especiales))
     
-    for i in range(letras_count):
-        password.append(random.choice(letras))
-
-    for i in range(numeros_count):
-        password.append(random.choice(numeros))
-
-    for i in range(caracteres_especiales_count):
-        password.append(random.choice(caracteres_especiales))
-
-    if caracteres_count < length:
-        random.shuffle(caracteres)
-        for i in range(length - caracteres_count):
-        	password.append(random.choice(caracteres))
+    
 
     random.shuffle(password)
 
