@@ -1,4 +1,6 @@
 final = 0
+
+# La condicion deberia ser >= 0
 while final == 0 :
     final = int (input ( "Ingrese numero entero mayor que 0 : "))
     if final > 0 :

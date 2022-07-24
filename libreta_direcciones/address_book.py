@@ -13,6 +13,7 @@ num = input()
 
 fecha_actual = date.today()
 
+# Para el campo ID puede emplear la libreria integrada de python 'uuid'
 identificador = format(id(name), 'x')
 
 reg_date = fecha_actual.strftime('%d/%m/%Y')
@@ -23,7 +24,8 @@ lista.append(num)
 lista.append(identificador)
 lista.append(reg_date)
 
-#Utilicé el modulo "path" para fijar de forma absoluta el directorio donde se encuentra el archivo .csv. No es común pero ayudó a encontrarlo dentro de la misma carpeta.
+# Utilicé el modulo "path" para fijar de forma absoluta el directorio donde se encuentra el archivo .csv.
+# No es común pero ayudó a encontrarlo dentro de la misma carpeta.
 directorio = path.dirname(path.abspath(__file__)) 
 archivo = path.join(directorio, "addresses.csv")
 with open(archivo, "a") as cvfile:
