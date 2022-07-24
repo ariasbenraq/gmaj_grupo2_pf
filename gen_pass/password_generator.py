@@ -10,16 +10,17 @@ caracteres = list(string.ascii_uppercase + string.ascii_lowercase + string.digit
 #string.digits considera numeros '0123456789'
 
 def generador_pass():
-    q1 = input("¿Desea ingresar la longitud de la contraseña? s/n:")
+    q1 = input("¿Desea ingresar la longitud de la contraseña? s/n: ")
     
     if q1 == "s":
         length = int(input("ingrese la longitud: "))
     else:
         length = 16
         
-    mayu2 = input("¿Desea que la contraseña tenga mayusculas? s/n:")
-    minus2 = input("¿Desea que la contraseña tenga minusculas? s/n:")
-    cespeciales = input("¿Desea que la contraseña contenga caracteres especiales? s/n:")
+    mayu2 = input("¿Desea que la contraseña contenga mayusculas? s/n: ")
+    minus2 = input("¿Desea que la contraseña contenga minusculas? s/n:  ")
+    num2 = input("¿Desea que la contraseña contenga numeros? s/n:")
+    cespeciales = input("¿Desea que la contraseña contenga caracteres especiales? s/n: ")
     
     
     password = []
@@ -33,6 +34,11 @@ def generador_pass():
         random.shuffle(minus)
         for i in range(length):
             password.append(random.choice(minus))
+
+    if num2 == "s":
+        random.shuffle(numeros)
+        for i in range(length):
+            password.append(random.choice(numeros))
             
     if cespeciales == "s":
         random.shuffle(caracteres_especiales)
