@@ -51,11 +51,11 @@ registro).
 
 # Integrantes:
 
-1. Integrante 1
-2. Integrante 2
-3. Integrante 3
-4. Integrante 4
-5. Integrante 5
+1. Esther Levy
+2. Gabriel Sadrinas
+3. Renzo Arias
+4. Javier Shatal
+5. Maaian Mirensky (Salió del curso)
 
 # Correcciones:
 
