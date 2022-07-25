@@ -1,6 +1,6 @@
 def palindrome (palabra) :
 palabra= palabra.lower (). replace('' , ' ')
-palabra_reversa= ' '.join(reversed(palabra))
+palabra_reversa= ''.join(reversed(palabra))
 return palabra==palabra_reversa 
 
 ContadorPalindromos=0
