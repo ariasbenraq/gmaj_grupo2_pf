@@ -3,7 +3,6 @@ count=0
 for j in frase:
   if j in "abcdefghijklmnñopqrstuvwxyz" or "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ":
       count+=1 
-      count = len("")
 print("la frase {}, tiene {} letras".format(frase,count))
 
 word = frase.split()
