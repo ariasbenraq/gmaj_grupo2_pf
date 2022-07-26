@@ -1,6 +1,5 @@
 #palabra clave para salir "adios"
 
-from pickle import TRUE
 import time
 from funcion import filtro
 from os import path
