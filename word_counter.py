@@ -1,9 +1,7 @@
-frase = input("Ingrese una frase: ")
-count=0
-for j in frase:
-  if j in "abcdefghijklmnñopqrstuvwxyz" or "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ":
-      count+=1 
-print("la frase {}, tiene {} letras".format(frase,count))
+import re
+frase = input("escriba una frase: ").strip()
+espacios = ''.join(re.findall("\s+", frase))
+print("El nombre {}, tiene {} letras".format(frase, len(frase) - len(espacios)))
 
 word = frase.split()
 count = len(word)
@@ -11,7 +9,7 @@ ciclo = 1
 print (f" y la frase tiene {count} palabras")
 
 archivo = open ("phrases.txt", "w")
-archivo.write (frase + '\n')
+archivo.write (frase + '\n'),
 archivo.close()
 print ("si quiere salir del contador escriba THE END ")
 Salir_del_contador= input("quiere salir del contador de palabras?")
