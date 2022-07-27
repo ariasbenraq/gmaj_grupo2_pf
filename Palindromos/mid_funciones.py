@@ -1,4 +1,3 @@
-
 def count_word(word_input):
     w_count = word_input.split()
     count = len(w_count)
