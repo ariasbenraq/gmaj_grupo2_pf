@@ -55,7 +55,7 @@ registro).
 2. Gabriel Sadrinas
 3. Renzo Arias
 4. Javier Shatal
-5. Maaian Mirensky (Salió del curso)
+
 
 # Correcciones:
 
