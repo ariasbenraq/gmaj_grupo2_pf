@@ -38,6 +38,7 @@ while frase_1 != "adios":
         archivo.write(frase + "\n")
 
     print(f"Cantidad de frases: {ciclo}")
+    # Se debe mostrar el total de palabras, no solo la cantidad de palabras de la ultima frase
     print(f"cantidad de palabras: {count}")
     print()
     

@@ -59,12 +59,8 @@ registro).
 
 # Correcciones:
 
-- Ejercicio __'generador de contraseñas'__: El usuario debe debe poder saltarse los inputs, y si no ingresa nada, devolver una contraseña con 16 digitos y caracteres alfanumericos
-- Rehacer el ejercicio de palindromos ya que al ejecutar se presenta el siguiente error:
+- Ejercicio __'contador de palabras'__: Deberia contar el total de palabras de las frases ingresadas, no solo la de la ultima frase. Cuando se ingresa la palabra clave de salido, no deberia contarse.
 
-```
-  File "/home/jairoq/Documents/freelance/projects/curso_python_2022/trabajos_finales/tp_final_grupo_2/Palindrome.py", line 2
-    palabra= palabra.lower (). replace('  ' , ' ')
-    ^
-IndentationError: expected an indented block
-```
+- Ejercicio __'fibonacci'__: Corregir la condicion del while para que tome solo valores mayores a cero.
+
+- Ejercicio __'palindromos'__: Corregir el algoritmo, debe mostrar al final el total de palabras ingresadas, la cantidad de palindromos y la cantidad de no palindromos
