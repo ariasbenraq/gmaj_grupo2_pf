@@ -9,6 +9,7 @@ word = 1
 while word != "n":
     
     ciclo += 1
+    # Solo debe solicitar palabras, no frases
     word = str(input("\nIngrese una palabra, frase u oración \npara verificar si es palindromo: ")) 
     main(word)
     count_word(word)
@@ -19,5 +20,6 @@ while word != "n":
 
 else:
     print("Muchas gracias por compartir")
-    time.sleep(1)
-    print("Hasta pronto")
+    # no utilizar estas dos ultimas lineas
+    # time.sleep(1)
+    # print("Hasta pronto")

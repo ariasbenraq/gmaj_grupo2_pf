@@ -22,13 +22,10 @@ while frase_1 != "adios":
         with open("contador\phrases.txt", "a") as archivo:
             archivo.write(frase + "\n")
 
-        print(f"Cantidad de frases: {ciclo}")
-        print(f"cantidad de palabras: {davar}")
-    else:
-        print()
-        print("Muchas gracias por compartir estas frases")
-        time.sleep(1)
-        print("Hasta pronto")
+    print(f"Cantidad de frases: {ciclo}")
+    # Se debe mostrar el total de palabras, no solo la cantidad de palabras de la ultima frase
+    print(f"cantidad de palabras: {count}")
+    print()
     
     frase_1 = list(filter(filtro, word))
     frase_1 ="".join(frase_1)

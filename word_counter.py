@@ -1,20 +1,30 @@
-import re
-frase = input("escriba una frase: ").strip()
-espacios = ''.join(re.findall("\s+", frase))
-print("El nombre {}, tiene {} letras".format(frase, len(frase) - len(espacios)))
+print ("BIENVENIDOS AL CONTADOR DE PALABRAS DEL GRUPO 2!!!!")
 
-word = frase.split()
-count = len(word)
-ciclo = 1
-print (f" y la frase tiene {count} palabras")
+frase = 0
+palabras = 0
 
-archivo = open ("phrases.txt", "w")
-archivo.write (frase + '\n'),
-archivo.close()
-print ("si quiere salir del contador escriba THE END ")
-Salir_del_contador= input("quiere salir del contador de palabras?")
+hola = True
 
-if Salir_del_contador == "the end" or "THE END":
-    print("el contador de palabras termino")
-else:
-    print(" sigue en el contador de palabras")
+while hola:
+    Frase= input("ingrese una frase para contar y si quiere salir del contador de palabras escriba abra cadabra: ")
+    
+    archivo = open ("phrases.txt", "a")
+    archivo.write (Frase + '\n'),
+    archivo.close()
+
+    
+    if Frase == "abra cadabra":
+    
+        print("gracias por esatr en el contador de palabras del grupo 2 ")
+    
+        hola = False
+    
+    else:
+    
+        frase = frase + 1 
+    
+        palabras = palabras + len(Frase.split(" "))
+        
+        print (f"tenes {frase} frases")
+    
+        print(f"y {palabras} palabras")
