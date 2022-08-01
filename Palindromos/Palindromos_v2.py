@@ -13,6 +13,7 @@ while shir != "shalom":
     davar = str(input("\nIngrese una palabra, para verificar si es palindromo \n(No escriba shalom): "))
     contar = davar
     contar = contar.split()
+    contar_1 = len(contar)
     if not list(filter(filtro, contar)):
 
         reversedList = davar[::-1]
@@ -24,7 +25,6 @@ while shir != "shalom":
              count_nop += 1
 
         palin_check = runPalindromeCheck(davar)
-        contar_1 = d_count(davar)
         time.sleep(0.5)
         print()
         print(palin_check)   
