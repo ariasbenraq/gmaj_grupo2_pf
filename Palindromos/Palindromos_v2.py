@@ -1,5 +1,4 @@
 from fun_v2 import runPalindromeCheck
-from fun_v2 import d_count
 from fun_v2 import filtro
 import time
 
