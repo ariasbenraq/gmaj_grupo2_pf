@@ -59,8 +59,21 @@ registro).
 
 # Correcciones:
 
-- Ejercicio __'contador de palabras'__: Deberia contar el total de palabras de las frases ingresadas, no solo la de la ultima frase. Cuando se ingresa la palabra clave de salido, no deberia contarse.
+- Ejercicio __'palindromos'__: En este ejercicio el usuario ingresa una palabra a la vez, por lo cual solo deberia tener una funcion que compruebe si la misma es palindromo o no. Con respecto al conteo, siempre muestra el mismo numero (1), por la cuestion mencionada anteriormente, y deberia mostrar la cantidad total de palabras ingresadas en cada iteracion. Por ejemplo:
 
-- Ejercicio __'fibonacci'__: Corregir la condicion del while para que tome solo valores mayores a cero.
+```
+Ingrese una palabra: neuquen
+palindromos: 1
+no palindromos: 0
+total palabras: 1
 
-- Ejercicio __'palindromos'__: Corregir el algoritmo, debe mostrar al final el total de palabras ingresadas, la cantidad de palindromos y la cantidad de no palindromos
+Ingrese una palabra: hola
+palindromos: 1
+no palindromos: 1
+total palabras: 2
+
+Ingrese una palabra: 12321
+palindromos: 2
+no palindromos: 1
+total palabras: 3
+```
